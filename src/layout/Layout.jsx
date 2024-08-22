@@ -1,9 +1,11 @@
 import { Outlet } from "react-router-dom";
+import Header from "../components/header/Header";
 
 const Layout = () => {
     return (
         <div>
-            <div className="w-full grid justify-items-center bg-[#f5f5f5] min-h-screen">
+            <div className=""><Header/></div>
+            <div className="w-full grid justify-items-center  min-h-screen py-10">
                 <Outlet/>
             </div>
         </div>
