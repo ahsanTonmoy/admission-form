@@ -4,17 +4,18 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './layout/Layout'
 import AdmissionForm from './page/admissionForm/AdmissionForm'
+import { ThemeProvider } from '@material-tailwind/react'
 
 
 // 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Layout/>,
-    children:[
+    element: <Layout />,
+    children: [
       {
-        path:'/',
-        element: <AdmissionForm/>
+        path: '/',
+        element: <AdmissionForm />
       }
     ],
   }
@@ -22,6 +23,8 @@ const router = createBrowserRouter([
 // 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </StrictMode>,
 )
