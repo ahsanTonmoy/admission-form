@@ -1,8 +1,9 @@
-import { Button } from "@material-tailwind/react";
+import Sectitle from "../../components/secTitle/Sectitle";
 const AdmissionForm = () => {
+    
     return (
         <div>
-            <Button color="blue" variant="filled">Button</Button>
+            
         </div>
     );
 };
